@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sensorweb.dao.NodeDAO">
+    <insert id="insertData" useGeneratedKeys="true" keyColumn="user.id">
+        insert into _user(id,home,lid,description,name,objecttype,status,versioninfo,personname)
+        values (#{user.id},#{user.home},#{user.lid},#{user.description.id},#{user.name.id},
+        #{user.objectType.id},#{user.status.id},#{user.versionInfo.id},#{user.personName.id})
+    </insert>
+
+    <select id="selectNode" resultMap="node">
+        MATCH (n) RETURN n LIMIT 5
+    </select>
+
+    <resultMap id="node" type="com.sensorweb.model.Node">
+        <id column="name" property="name"/>
+        <result column="pagerank" property="pagerank"/>
+        <result column="community" property="community"/>
+    </resultMap>
+</mapper>

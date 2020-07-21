@@ -1,0 +1,21 @@
+html, body {
+    font: 16pt arial;
+}
+#viz {
+    width: 1000px;
+    height: 300px;
+    border: 1px solid lightgray;
+    font: 22pt arial;
+}
+
+#worldwind {
+    width: 1000px;
+    height: 500px;
+    border: 1px solid lightgray;
+    font: 22pt arial;
+}
+
+#one{width:200px; height:180px; float:left}
+#two{width:50px; height:180px; float:left}
+#three{width:200px; height:180px; float:left}
+.btn{width:50px; height:30px; margin-top:10px; cursor:pointer;}

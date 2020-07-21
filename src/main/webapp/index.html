@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">-->
+    <title>可视化查询</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/FlexSlider/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="css/thems.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body onload="draw()">
+<!--头部-->
+<!--<div class="header">-->
+<!--    <div class="head clearfix">-->
+<!--        <ul class="nav clearfix">-->
+<!--            <li><a href="index.html">首页</a></li>-->
+<!--            <li class="now"><a href="content.html">可视化查询</a></li>-->
+<!--            <li><a href="about.html">关于我们</a></li>-->
+<!--            <li><a href="contact.html">联系我们</a></li>-->
+<!--        </ul>-->
+
+<!--        <div class="search">-->
+<!--            <input name="" type="text" class="text">-->
+<!--            <input name="" type="submit" class="btn" value="">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--头部-->
+<div class="scd clearfix">
+    <div class="scd_l">
+        <select multiple="multiple" id="select1" style="width:200px;height:400px; float:left; border:4px #A0A0A4 outset; padding:4px; margin-top: 20px;margin-bottom: 20px">
+        </select>
+        <div>
+            <hr></div>
+        <div>
+            <select multiple="multiple" id="select2" style="width: 200px;height:400px; float:left;border:4px #A0A0A4 outset; padding:4px;">
+            </select>
+        </div>
+    </div>
+    <div class="scd_r">
+        <div class="s_ctn">
+            <div class="solution" style="margin-left: -240px;margin-top: -30px">
+                <dl class="clearfix" style="margin-bottom: -20px">
+                    <dd><div id="viz" style="padding: 10px"></div></dd>
+                </dl>
+                <dl class="clearfix">
+                    <dd>
+                        <div id="worldwind" style="padding: 10px">
+                            <canvas id="canvasOne" style="width: 100%; height: 100%;background-color: rgb(36,74,101);">
+                                Your browser does not support HTML5 Canvas.
+                            </canvas>
+                        </div>
+                    </dd>
+                </dl>
+                <div class="space_hx">&nbsp;</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="f_bg">
+    <div class="bq_bg">
+        <div class="bq">
+            SOWELL Technology co., Ltd
+            <span>Copyright(c) 2014 Sowell Tech All rights <a href="http://www.bootstrapmb.com/" title="bootstrapmb">Reserved</a>. </span>
+        </div>
+    </div>
+</div>
+
+
+
+<!--<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/js_z.js"></script>
+<script type="text/javascript" src="plugins/FlexSlider/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/neovis.js"></script>
+
+<script src="https://unpkg.com/worldwindjs@1.7.0/build/dist/worldwind.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/neo4j.js"></script>
+<script type="text/javascript" src="js/myworldwind.js"></script>
+<!--<script type="text/javascript" src="js/content.js"></script>-->
+<script language="javascript">
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+    });
+</script>
+</body>
+
+</html>
